@@ -9,7 +9,8 @@ class UserProvider extends React.Component {
     email: "YouGotMail@mail.com",
     firstName: "Rickie",
     lastName: "Bobby",
-    avatar: "",
+    avatar: "https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/man5-512.png",
+    updateUser: (user) => this.updateUser(user)
   };
 
   updateUser = (user) => {
@@ -18,6 +19,7 @@ class UserProvider extends React.Component {
       email: user.email,
       firstName: user.firstName,
       lastName: user.lastName,
+      avatar: user.avatar,
     });
   };
 
