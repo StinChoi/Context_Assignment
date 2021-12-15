@@ -13,9 +13,6 @@ const UserForm = (props) => {
     e.preventDefault();
     account.updateUser({ email, firstName, lastName, avatar })
   }
-
-   const handleChange = (e, { value }) => setAvatar({ value });
-
   return (
     <>
     <h1>User Form</h1>

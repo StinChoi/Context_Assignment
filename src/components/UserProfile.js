@@ -8,7 +8,7 @@ const account = useContext(AccountInfo);
 
   return (
     <div>
-      <h1>Users' Profile</h1>
+      <h1>{account.firstName}'s Profile</h1>
       <User/>
       <UserForm/>
     </div>
